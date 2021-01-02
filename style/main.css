@@ -1,0 +1,90 @@
+:root{
+    --primary-color: #E50914;
+    --primary-color-dark: #141414;
+    --primary-color-text: #f1f1f1;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;   
+}
+/*elementos base*/
+body{
+    background: var(--primary-color-dark);
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-text);
+}
+
+header .wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    color: var(--primary-color);
+    font-family: "Arial Black", Times;
+    font-size: 2.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color:var(--primary-color-text);
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 1rem;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(../images/seriesMovies/capa-house.jpg);
+
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.filme-principal .descricao{
+    margin-top: 5%;
+    margin-bottom: 2.5rem;
+}
+.filme-principal .title{
+    margin-top: 15%;
+    font-size: 2.5rem;
+}
+.button{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: var(--primary-color-text);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
+.button i{
+    margin-right: 8px;
+}
+.wrapper{
+    margin-left: 10px;
+}
+.filme-principal .wrapper{
+    width: 70%;
+}
+.box-filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin-top: 5px;
+}

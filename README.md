@@ -1,9 +1,3 @@
-
-<p align="center">
-   # clone Netflix
-</p>
-
-
 # Clone Netflix
 
 A proposta do projeto é fazer um clone do site web da Netflix.
